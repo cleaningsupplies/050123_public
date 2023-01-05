@@ -1,0 +1,118 @@
+/* styling for search component */
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.waves_bg{
+    position: absolute;
+    z-index: -1;
+}
+
+.search_content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--bg_color);
+    width: 80vw;
+    height: 40vh;
+}
+
+.text_input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    h1{
+        font-size: 3vh;
+        margin: 1%;
+        padding-bottom: 2%;
+    }
+
+    #search_word{
+        background: url(../images/search.svg) no-repeat scroll 0.5vw center;
+        background-color: var(--bg_color);
+    }
+
+    #location{
+        background: url(../images/location.svg) no-repeat scroll 0.5vw center;
+        background-color: var(--bg_color);
+    }
+
+    input[type=text]{
+        height: 6vh;
+        background-color: var(--bg_color);
+        padding-left: 3vw;
+        width: 25vw;
+        flex-grow: 2;
+        margin: 1%;
+        font-size: 1.5vh;
+        font-weight: bold;
+        color: var(--primary_blue);
+    }
+
+    input[type=text]::placeholder{
+        
+        color: var(--primary_blue);
+        font-size: 1.5vh;
+        font-weight: bold;
+    }
+
+    .text_input > button{
+        background-color: var(--secondary_blue);
+        color: var(--bg_color);
+        border: none;
+        border-radius: 20px;
+        height: 5vh;
+        width: 10vw;
+        font-size: 2vh;
+        font-weight: bold;
+        flex-grow: 1;
+        margin: 1%;
+    }
+
+    .text_input > button:hover{
+        color: var(--secondary_blue);
+        background-color: var(--bg_color);
+    }
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 1;
+    padding-top: 6vh;
+    padding-bottom: 2vh;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.search_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .search_buttons > button{
+        background-color: transparent;
+        color: var(--bg_color);
+        text-transform: uppercase;
+        border: 1px solid var(--bg_color);
+        border-radius: 20px;
+        height: 5vh;
+        font-size: 1.8vh;
+        margin: 1%;
+        flex-grow: 1;
+    }
+
+    .search_buttons > button:hover{
+        color: var(--secondary_blue);
+        background-color: var(--bg_color);
+    }
+
+

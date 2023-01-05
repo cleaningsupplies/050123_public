@@ -1,0 +1,33 @@
+/* header styling */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8vw 5vh 8vw;
+}
+
+.header_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.menu{
+    color: var(--primary_blue);
+    font-weight: bold;
+}
+
+.signin{
+    height: 70%;
+    width: 40%;
+    border-radius: 20px;
+    border: 1px solid var(--secondary_blue);
+    color: var(--secondary_blue);
+    background-color: transparent;
+}
+
+.signin:hover{
+    background-color: var(--secondary_blue);
+    color: var(--bg_color);
+}
