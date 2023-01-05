@@ -1,6 +1,48 @@
 /* footer styling */
 
 .footer{
-    height: 20%;
+    margin-top: 10vh;
     background-color: var(--primary_blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer table, .copyright{
+    width: 60vw;
+    margin-top: 5vh;
+}
+
+.footer th, .footer td, .footer div{
+    text-align: left;
+    color: var(--bg_color);
+    line-height: 30px;
+}
+
+.footer th{
+    padding-bottom: 1.2vh;
+}
+
+.footer button{
+    background-color: var(--secondary_blue);
+    border: none;
+    color: var(--bg_color);
+    width: 20vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 2vh;
+    height: 5vh;
+}
+
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vh;;
+}
+
+.contact div{
+    margin-left: 1vw;
 }

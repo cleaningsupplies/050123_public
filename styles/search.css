@@ -10,7 +10,12 @@
 .waves_bg{
     position: absolute;
     z-index: -1;
+    
 }
+
+/* .waves_bg, .waves{
+    width: 1800px;
+} */
 
 .search_content{
     position: absolute;
@@ -33,6 +38,7 @@
         font-size: 3vh;
         margin: 1%;
         padding-bottom: 2%;
+        color: var(--bg_color);
     }
 
     #search_word{
@@ -64,11 +70,11 @@
         font-weight: bold;
     }
 
-    .text_input > button{
+    .text_input button{
         background-color: var(--secondary_blue);
         color: var(--bg_color);
         border: none;
-        border-radius: 20px;
+        border-radius: 30px;
         height: 5vh;
         width: 10vw;
         font-size: 2vh;
@@ -77,7 +83,7 @@
         margin: 1%;
     }
 
-    .text_input > button:hover{
+    .text_input button:hover{
         color: var(--secondary_blue);
         background-color: var(--bg_color);
     }
@@ -90,6 +96,7 @@ h2{
     padding-bottom: 2vh;
     text-transform: uppercase;
     font-weight: 300;
+    color: var(--bg_color);
 }
 
 .search_buttons{
@@ -103,7 +110,7 @@ h2{
         color: var(--bg_color);
         text-transform: uppercase;
         border: 1px solid var(--bg_color);
-        border-radius: 20px;
+        border-radius: 30px;
         height: 5vh;
         font-size: 1.8vh;
         margin: 1%;

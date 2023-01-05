@@ -9,7 +9,7 @@
     --primary_blue: #082C85;
     --secondary_blue: #266EF4;
 
-    --primary_turquoise: #21CDD5;
+    --primary_turquoise: #00DFCC;
     --secondary_turquoise: #25CABC;
     
 }
@@ -17,6 +17,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.1vh;
+    color: var(--primary_text_color);
 }
 
 html, body{
