@@ -11,6 +11,7 @@
 .footer table, .copyright{
     width: 60vw;
     margin-top: 5vh;
+    table-layout: fixed;
 }
 
 .footer th, .footer td, .footer div{
@@ -32,9 +33,13 @@
     border-top-right-radius: 10px;
     margin-top: 2vh;
     height: 5vh;
+    overflow-y: hidden;
 }
 
-
+.footer button:hover{
+    background-color: var(--bg_color);
+    color: var(--secondary_blue);
+}
 
 .contact{
     display: flex;
@@ -44,4 +49,15 @@
 
 .contact div{
     margin-left: 1vw;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .footer button{
+        width: 30vw;
+    }
+
+    .footer table, .footer div{
+        width: 90%;
+    }
 }

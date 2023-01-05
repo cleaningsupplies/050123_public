@@ -61,7 +61,7 @@
         margin-bottom: 6vh;
     }
 
-    .square p{
+    .highlight{
         color: var(--secondary_text_color);
     }
 
@@ -69,10 +69,21 @@
         margin-bottom: 5vh;
     }
 
+    .text_wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
     .quote{
-        height: 4vh;
-        margin:1%;
-        margin-right: 3%;
+        width: 15vw;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
     }
 
 .bottom_text{
@@ -94,6 +105,7 @@
         color: var(--bg_color);
         background-color: var(--primary_turquoise);
         margin-bottom: 10vh;
+        overflow-y: hidden;
     }
 
 .crop_bars{
@@ -115,15 +127,11 @@
 
 /* Responsive */
 
-@media only screen and (min-width: 1500px) {
-
-
-}
-
 @media only screen and (max-width: 900px) {
 
     .crop_background{
-        display: none;
+       height: 160%;
+       width: 200%;
     }
 
     .bottom_text button {
