@@ -10,12 +10,7 @@
 .waves_bg{
     position: absolute;
     z-index: -1;
-    
 }
-
-/* .waves_bg, .waves{
-    width: 1800px;
-} */
 
 .search_content{
     position: absolute;
@@ -54,7 +49,7 @@
     input[type=text]{
         height: 6vh;
         background-color: var(--bg_color);
-        padding-left: 3vw;
+        padding-left: 4vw;
         width: 25vw;
         flex-grow: 2;
         margin: 1%;
@@ -64,7 +59,6 @@
     }
 
     input[type=text]::placeholder{
-        
         color: var(--primary_blue);
         font-size: 1.5vh;
         font-weight: bold;
@@ -121,5 +115,29 @@ h2{
         color: var(--secondary_blue);
         background-color: var(--bg_color);
     }
+
+/* Responsive */
+
+@media only screen and (max-width: 900px) {
+    .search_content{
+        width: 95%;
+    }
+
+    .text_input button, input[type=text]::placeholder, .search_buttons > button{
+        font-size: 1.2vh;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .waves_bg, .waves{
+        width: 90%;
+    } 
+    .search_content{
+        
+    }
+}
+
+
+
 
 
