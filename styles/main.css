@@ -111,7 +111,7 @@
 .crop_bars{
     position: absolute;
     z-index: -1;
-    top: 190%;
+    top: 200%;
     width: 100%;
     overflow-x: hidden;
 }
@@ -139,7 +139,7 @@
     }
 
     .crop_bars{
-        top: 235%;
+        top: 250%;
     }  
     
     .bars{

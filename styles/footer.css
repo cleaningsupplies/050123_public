@@ -51,6 +51,7 @@
     margin-left: 1vw;
 }
 
+/* Responsive */ 
 
 @media only screen and (max-width: 1000px) {
     .footer button{
