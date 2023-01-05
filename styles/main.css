@@ -45,11 +45,15 @@
 }
 
 .main_content{
-    height: 80%;
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
 }
+
+    .squares{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 
     .square{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -81,7 +85,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
     .bottom_text div{
         font-weight: bold;
@@ -96,4 +100,11 @@
         color: var(--bg_color);
         background-color: var(--primary_turquoise);
     }
+
+.bars{
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    top: 180%;
+}
 

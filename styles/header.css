@@ -31,3 +31,10 @@
     background-color: var(--secondary_blue);
     color: var(--bg_color);
 }
+
+
+@media only screen and (max-width: 900px) {
+   .header_buttons{
+    width: 50%;
+   }
+}
