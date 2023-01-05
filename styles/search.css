@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
     h1{
@@ -34,6 +35,7 @@
         margin: 1%;
         padding-bottom: 2%;
         color: var(--bg_color);
+        overflow-y: hidden;
     }
 
     #search_word{
@@ -97,6 +99,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
     .search_buttons > button{
@@ -132,10 +135,8 @@ h2{
     .waves_bg, .waves{
         width: 90%;
     } 
-    .search_content{
-        
-    }
 }
+
 
 
 

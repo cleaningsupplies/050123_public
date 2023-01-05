@@ -1,28 +1,17 @@
 /* styling for main content */
 
-/* .waves_main{
-    z-index: -2;
-    top:45%;
-    display: block;
-    margin: auto;
-} */
-
-.main{
-    height: 100%;
-}
-
-.crop {
+.crop_background {
     z-index: -2;
     position: absolute;
-    top:55%;
-    width: 100%;
+    top:45%;
+    width: 120%;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
-.crop img {
-    width: 120%;
+.crop_background img{
+    width: 100%;
 }
 
 .top_text{
@@ -30,44 +19,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20%;
     margin-top: 7%;
     margin-bottom: 10vh;
 }
 
-.top_text > div > span{
-    font-weight: bold;
-}
+    .top_text img{
+        height: 10vh;
+    }
 
-.top_text div{
-    text-align: center;
-    width: 75%;
-}
+    .top_text > div > span{
+        font-weight: bold;
+    }
+
+    .top_text div{
+        text-align: center;
+        width: 75%;
+    }
 
 .main_content{
     display: flex;
     width: 100%;
+    margin-bottom: 20vh;
 }
 
     .squares{
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .square{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         background-color: var(--bg_color);
-        height: 100%;
         width: 25vw;
         padding: 2%;
+        margin: 1%;
     }
 
     .square div{
         display: flex;
+        margin-bottom: 6vh;
     }
 
-    .square span{
+    .square p{
         color: var(--secondary_text_color);
     }
 
@@ -78,6 +72,7 @@
     .quote{
         height: 4vh;
         margin:1%;
+        margin-right: 3%;
     }
 
 .bottom_text{
@@ -85,7 +80,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
 }
     .bottom_text div{
         font-weight: bold;
@@ -99,12 +93,64 @@
         border: none;
         color: var(--bg_color);
         background-color: var(--primary_turquoise);
+        margin-bottom: 10vh;
     }
 
-.bars{
-    right: 0;
+.crop_bars{
     position: absolute;
     z-index: -1;
-    top: 180%;
+    top: 190%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bars{
+    margin-left: 10%;
+    float: right;
+    width: 20%;
+    margin-right: -4vw;
+    overflow-x: hidden;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1500px) {
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .crop_background{
+        display: none;
+    }
+
+    .bottom_text button {
+        width: 20vw;
+    }
+
+    .crop_bars{
+        top: 235%;
+    }  
+    
+    .bars{
+        width: 40%;
+        margin-right: -10vw;
+    }
+
+    .squares{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .square{
+        width: 80%;
+        margin: 2%;
+        height: 100%;
+    }
 }
 

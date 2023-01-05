@@ -1,7 +1,6 @@
 /* footer styling */
 
 .footer{
-    margin-top: 10vh;
     background-color: var(--primary_blue);
     display: flex;
     flex-direction: column;
